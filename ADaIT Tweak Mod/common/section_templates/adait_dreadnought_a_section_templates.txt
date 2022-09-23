@@ -1,0 +1,185 @@
+# Advanced Titan Bow 2T
+#
+# Advance Titan Core 3XL
+# Advance Carrier Core 4H4P
+#
+# Advanced Titan Stern 3XL
+#
+
+@section_cost = 240
+
+ship_section_template = {
+	key = "Advanced_Dreadnought_Titan_Bow"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { "tech_advanced_dreadnought_tech" "tech_titans" }			### Not a best solution, but Im perfectly okay with it.
+
+#	potential = {
+#		host_has_dlc = "Apocalypse"
+#	}			### Shit didnt work with sections => go make tech, bind this shit to tech, restrict tech to DLC or figure out something on your own;
+
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_03"
+	}
+    component_slot = {
+		name = "TITANIC_GUN_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_03"
+	}
+
+	large_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "Advanced_Dreadnought_Titan_Core"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_advanced_dreadnought_tech }
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_03"
+	}
+    component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_03"
+	}
+    component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_03"
+	}
+
+	large_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "Advanced_Dreadnought_Carrier_core"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_advanced_dreadnought_tech }
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+    component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+    component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+    component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "PD_07"
+		template = "point_defence_turret"
+		locatorname = "s_gun_b5"
+	}
+	component_slot = {
+		name = "PD_08"
+		template = "point_defence_turret"
+		locatorname = "s_gun_b6"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		locatorname = "s_gun_15"
+	}
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		locatorname = "s_gun_16"
+	}
+
+	large_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "Advanced_Dreadnought_Titan_Stern"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_advanced_dreadnought_tech }
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+    component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+    component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+
+	aux_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}

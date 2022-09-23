@@ -1,0 +1,1292 @@
+@section_cost = 160
+
+### FORE/BOW sections
+#Fore 4L (Standart)
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_dreadnought_a }
+	
+	component_slot = {
+		name = "LARGE_GUN_1"
+		template = "large_turret"
+		locatorname = "l_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore T
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_T"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { "tech_advanced_dreadnought_tech" "tech_titans" }			### Not a best solution, but Im perfectly okay with it.
+	
+#	potential = {
+#		host_has_dlc = "Apocalypse"
+#	}			### Shit didnt work with sections => go make tech, bind this shit to tech, restrict tech to DLC or figure out something on your own;
+	
+	component_slot = {
+		name = "TITANIC_GUN_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_03"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 4
+	}
+}
+
+#Fore 2X
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_2X"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_advanced_dreadnought_tech }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		is_side_slot = yes
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		is_side_slot = yes
+		locatorname = "xl_gun_02"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+	}
+}
+
+#Fore 1X2L
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_XL"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+#Fore 1X1L2M
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_XLM"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "m_gun_03"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore 2L4M
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_LM"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_dreadnought_a }
+	
+	component_slot = {
+		name = "LARGE_GUN_1"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "m_gun_04"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore 4H "Carrier"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_CARRIER"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+		
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_04"
+	}
+	
+	large_utility_slots = 7
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Fore 2H2M2S2P "Patrol"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_PATROL"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+		
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "s_gun_02"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "s_gun_03"
+	}
+	
+	large_utility_slots = 7
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Fore 6R2S2P "Avalance"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_AVALANCE"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_advanced_dreadnought_tech }
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "medium_missile_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "medium_missile_turret"
+		locatorname = "m_gun_04"
+	}
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "medium_missile_turret"
+		is_side_slot = yes
+		locatorname = "m_gun_08"
+	}
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "medium_missile_turret"
+		is_side_slot = yes
+		locatorname = "m_gun_09"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "s_gun_03"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "s_gun_02"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "l_gun_s4"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore 2L2M2S2P "Brawler"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_BRAWLER"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "s_gun_02"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "s_gun_03"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore 2L1M4S2P "Brawler Type1"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_BRAWLER1"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "m_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "s_gun_02"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "s_gun_03"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Fore 2L1M2S4P "Brawler Type2"
+ship_section_template = {
+	key = "DREADNOUGHT_A_FORE_BRAWLER2"
+	ship_size = dreadnought_a
+	fits_on_slot = fore
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "l_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "s_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "s_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "m_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "m_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "m_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "m_gun_04"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+### MID sections
+#Mid 5S3P (Standart)
+ship_section_template = {
+	key = "DREADNOUGHT_A_MID"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_dreadnought_a }
+	
+	component_slot = {
+		name = "SMALL_GUN_9"
+		template = "small_turret"
+		locatorname = "s_gun_05"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_10"
+		template = "small_turret"
+		locatorname = "s_gun_06"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_11"
+		template = "small_turret"
+		locatorname = "s_gun_07"
+	}
+	component_slot = {
+		name = "SMALL_GUN_12"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_08"
+	}
+	component_slot = {
+		name = "SMALL_GUN_13"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_09"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		locatorname = "s_gun_14"
+	}	
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		locatorname = "s_gun_15"
+	}	
+	component_slot = {
+		name = "PD_11"
+		template = "point_defence_turret"
+		locatorname = "s_gun_16"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+#Mid 1H2S2P "Patrol"
+ship_section_template = {
+	key = "DREADNOUGHT_A_MID_PATROL"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "small_turret"
+		locatorname = "s_gun_b5"
+	}
+	component_slot = {
+		name = "SMALL_GUN_10"
+		template = "small_turret"
+		locatorname = "s_gun_b6"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		locatorname = "s_gun_15"
+	}	
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		locatorname = "s_gun_16"
+	}	
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Mid 2M2S2P "Brawler"
+ship_section_template = {
+	key = "DREADNOUGHT_A_MID_BRAWLER"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_09"
+		template = "medium_turret"
+		locatorname = "s_gun_14"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_10"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "m_gun_07"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "small_turret"
+		locatorname = "s_gun_b5"
+	}
+	component_slot = {
+		name = "SMALL_GUN_10"
+		template = "small_turret"
+		locatorname = "s_gun_b6"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		locatorname = "s_gun_15"
+	}	
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		locatorname = "s_gun_16"
+	}	
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Mid 8S
+ship_section_template = {
+	key = "DREADNOUGHT_A_MID_8S"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "small_turret"
+		locatorname = "s_gun_05"
+	}
+	component_slot = {
+		name = "SMALL_GUN_10"
+		template = "small_turret"
+		locatorname = "s_gun_06"
+	}
+	component_slot = {
+		name = "SMALL_GUN_11"
+		template = "small_turret"
+		locatorname = "s_gun_07"
+	}
+	component_slot = {
+		name = "SMALL_GUN_12"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_08"
+	}
+	component_slot = {
+		name = "SMALL_GUN_13"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_09"
+	}
+	component_slot = {
+		name = "SMALL_GUN_14"
+		template = "small_turret"
+		locatorname = "s_gun_14"
+	}
+	component_slot = {
+		name = "SMALL_GUN_15"
+		template = "small_turret"
+		locatorname = "s_gun_15"
+	}
+	component_slot = {
+		name = "SMALL_GUN_16"
+		template = "small_turret"
+		locatorname = "s_gun_16"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Mid 3S5P
+ship_section_template = {
+	key = "DREADNOUGHT_A_MID_SP"
+	ship_size = dreadnought_a
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_a_husk_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "SMALL_GUN_9"
+		template = "small_turret"
+		locatorname = "s_gun_05"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_10"
+		template = "small_turret"
+		locatorname = "s_gun_06"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_11"
+		template = "small_turret"
+		locatorname = "s_gun_07"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_08"
+	}
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_09"
+	}
+	component_slot = {
+		name = "PD_11"
+		template = "point_defence_turret"
+		locatorname = "s_gun_14"
+	}	
+	component_slot = {
+		name = "PD_12"
+		template = "point_defence_turret"
+		locatorname = "s_gun_15"
+	}	
+	component_slot = {
+		name = "PD_13"
+		template = "point_defence_turret"
+		locatorname = "s_gun_16"
+	}
+	
+	large_utility_slots = 7
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+### STERN sections
+#Stern 3L (Standart)
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_dreadnought_a }
+	
+	component_slot = {
+		name = "LARGE_GUN_17"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_18"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_07"
+	}
+	component_slot = {
+		name = "LARGE_GUN_19"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_08"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Stern 1X1L
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN_XL"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_advanced_dreadnought_tech }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_09"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_017"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_b7"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+	}
+}
+
+#Stern 2L2M
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN_LM"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "LARGE_GUN_17"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_18"
+		template = "large_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_07"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_17"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m8"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_18"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m9"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#Stern 3L "Carrier"
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN_CARRIER"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"	
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "STRIKE_CRAFT_17"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_18"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_19"
+		template = "large_strike_craft"
+		is_side_slot = yes
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Stern 5M2S
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN_MS"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_17"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m6"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_18"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m7"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_19"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m8"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_20"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m9"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_21"
+		template = "medium_turret"
+		locatorname = "m_gun_13"
+	}
+	component_slot = {
+		name = "SMALL_GUN_17"
+		template = "small_turret"
+		locatorname = "s_gun_21"
+	}
+	component_slot = {
+		name = "SMALL_GUN_18"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_24"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#Stern 4M2S2P
+ship_section_template = {
+	key = "DREADNOUGHT_A_STERN_MSP"
+	ship_size = dreadnought_a
+	fits_on_slot = stern
+	should_draw_components = no
+	entity = "dreadnought_a_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_improved_dreadnought_tech }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_17"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m6"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_18"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m7"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_19"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m8"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_20"
+		template = "medium_turret"
+		is_side_slot = yes
+		locatorname = "l_gun_m9"
+	}
+	component_slot = {
+		name = "SMALL_GUN_17"
+		template = "small_turret"
+		locatorname = "s_gun_21"
+	}
+	component_slot = {
+		name = "SMALL_GUN_18"
+		template = "small_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_22"
+	}
+	component_slot = {
+		name = "PD_17"
+		template = "point_defence_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_22"
+	}
+	component_slot = {
+		name = "PD_18"
+		template = "point_defence_turret"
+		is_side_slot = yes
+		locatorname = "s_gun_24"
+	}
+	
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}

@@ -1,0 +1,75 @@
+﻿l_english:
+
+# Corvette hulls
+tss_improved_interceptor:		"Improved Interceptor"
+tss_advanced_interceptor:		"Advanced Interceptor"
+
+tss_improved_picket:            "Improved Picket Ship"
+tss_advanced_picket:            "Advanced Picket Ship"
+
+tss_improved_missile:           "Improved Missile Boat"
+tss_advanced_missile:           "Advanced Missile Boat"
+
+# Destroyer hull sections
+tss_improved_artillery_bow:     "Improved Artillery Bow"
+tss_advanced_artillery_bow:     "Advanced Artillery Bow"
+
+tss_improved_gunship_bow:       "Improved Gunship Bow"
+tss_advanced_gunship_bow:       "Advanced Gunship Bow"
+
+tss_improved_interceptor_stern: "Improved Interceptor Stern"
+tss_advanced_interceptor_stern: "Advanced Interceptor Stern"
+
+tss_improved_gunship_stern:     "Improved Gunship Stern"
+tss_advanced_gunship_stern:     "Advanced Gunship Stern"
+
+# Cruiser hull sections
+tss_improved_boardside_bow:     "Improved Boardside Bow"
+tss_advanced_boardside_bow:     "Advanced Boardside Bow"
+
+tss_improved_boardside_core:    "Improved Boardside Core"
+tss_advanced_boardside_core:    "Advanced Boardside Core"
+
+tss_improved_boardside_stern:		"Improved Boardside Stern"
+tss_advanced_boardside_stern:		"Advanced Boardside Stern"
+
+#tss_improved_artillery_bow:     "Improve Artillery Bow"
+#tss_advanced_artillery_bow:     "Advanced Artillery Bow"
+
+tss_improved_artillery_core:    "Improve Artillery Core"
+tss_advanced_artillery_core:    "Advanced Artillery Core"
+
+# Battleship hull sections
+tss_improved_spinal_mount:      "Improved Spinal Mount"
+tss_advanced_spinal_mount:      "Advanced Spinal Mount"
+
+tss_improved_launch_bays:       "Improved Launch Bays"
+tss_advanced_launch_bays:		"Advanced Launch Bays"
+
+tss_improved_artillery_stern:		"Improved Artillery Stern"
+tss_advanced_artillery_stern:		"Advanced Artillery Stern"
+
+tss_improved_heavy_artillery_core:  "Improved Heavy Artillery Core"
+tss_advanced_heavy_artillery_core:  "Advanced Heavy Artillery Core"
+
+tss_improved_artillery_core:     "Improved Artillery Core"
+tss_advanced_artillery_core:     "Advanced Artillery Core"
+
+# Titan Sections
+tss_improved_titan_bow:			"Improved Titan Bow"
+tss_advanced_titan_bow:			"Advanced Titan Bow"
+
+tss_improved_titan_core:		"Improved Titan Core"
+tss_advanced_titan_core:		"Advanced Titan Core"
+
+tss_improved_titan_stern:		"Improved Titan Stern"
+tss_advanced_titan_stern:		"Advanced Titan Stern"
+
+# Juggernaut
+
+
+# Defense Platform
+tss_advanced_light_station:     "Advanced Light Military Station"
+tss_advanced_medium_station:    "Advanced Medium Military Station"
+tss_advanced_heavy_station:     "Advanced Heavy Military Station"
+tss_advanced_hangar_station:    "Advanced Hangar Station"

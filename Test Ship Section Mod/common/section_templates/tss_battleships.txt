@@ -1,0 +1,454 @@
+# Battleship sections
+# - Improved Artillery stern
+# - Advance Artillery stern
+
+# Bow
+# Improved Spinal Mount
+ship_section_template = { key = "tss_improved_spinal_mount"
+	ship_size = battleship
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "battleship_bow_XL1_entity"
+	#icon = "GFX_ship_part_core_bow"
+
+    # Component
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+    component_slot = {
+		name = "LARGE_01"
+		template = "large_turret"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 100}
+	}
+    prerequisites = { tech_battleship_hull_1 }
+}
+
+# Advanced Spinal Mount
+ship_section_template = { key = "tss_advanced_spinal_mount"
+	ship_size = battleship
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "battleship_bow_XL1_entity"
+	#icon = "GFX_ship_part_core_bow"
+
+    # Component
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+    component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 5
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 120}
+	}
+    prerequisites = { tech_battleship_hull_2 }
+}
+
+# Core
+# Improved Launch Bays
+ship_section_template = { key = "tss_improved_launch_bays"
+    ship_size = battleship
+    fits_on_slot = mid
+
+    # Graphics
+	should_draw_components = yes
+	entity = "battleship_mid_S4LHB_entity" # Supports only one hanger bay "graphic" (no fighters)
+	# icon   = "GFX_ship_part_core_mid"
+
+    # Section slots
+	component_slot = {
+		name        = "STRIKE_CRAFT_01"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_02"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_03"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+    component_slot = {
+		name        = "STRIKE_CRAFT_04"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_01"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_02"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 4
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 100 }
+	}
+	prerequisites = { tech_battleship_hull_1 }
+}
+
+# Advanced Launch Bays
+ship_section_template = { key = "tss_advanced_launch_bays"
+	ship_size = battleship
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "battleship_mid_S4LHB_entity" # Supports only one hanger bay "graphic" (no fighters)
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Section slots
+	component_slot = {
+		name        = "STRIKE_CRAFT_01"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_02"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_03"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_04"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+	component_slot = {
+		name        = "STRIKE_CRAFT_05"
+		template    = "large_strike_craft"
+		locatorname = "strike_craft_locator_01"
+		rotation    = 90
+	}
+
+	component_slot = {
+		name 		= "SMALL_GUN_01"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_02"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_03"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_04"
+		template 	= "point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+
+
+	large_utility_slots = 5
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 120 }
+	}
+	prerequisites = { tech_battleship_hull_2 }
+
+	# AI role preference 
+}
+
+# Stern
+# Improved Artillery stern
+ship_section_template = { key = "tss_improved_artillery_stern"
+	ship_size = battleship
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "battleship_stern_L1_entity" # There are currently no stern battleship sections that support small gun graphics
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	aux_utility_slots = 4
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 100 }
+	}
+	prerequisites = { tech_battleship_hull_1 }
+
+	# AI role preference 
+}
+
+# Advanced Artillery stern
+ship_section_template = { key = "tss_advanced_artillery_stern"
+	ship_size = battleship
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "battleship_stern_L1_entity" # There are currently no stern battleship sections that support small gun graphics
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	aux_utility_slots = 6
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 120 }
+	}
+	prerequisites = { tech_battleship_hull_2 }
+
+	# AI role preference 
+}
+
+# Improved Heavy Artillery Core
+ship_section_template = { key = "tss_improved_heavy_artillery_core"
+	ship_size = battleship
+	fits_on_slot = mid
+
+	should_draw_components = yes
+	entity = "battleship_mid_L2M2_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	large_utility_slots = 4
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 100 }
+	}
+	prerequisites = { tech_battleship_hull_1 }
+}
+
+# Advanced Heavy Artillery Core
+ship_section_template = { key = "tss_advanced_heavy_artillery_core"
+	ship_size = battleship
+	fits_on_slot = mid
+
+	should_draw_components = yes
+	entity = "battleship_mid_L2M2_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	large_utility_slots = 5
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 120 }
+	}
+	prerequisites = { tech_battleship_hull_2 }
+
+	# AI role preference
+}
+
+# Improved Artillery Core
+ship_section_template = { key = "tss_improved_artillery_core"
+	ship_size = battleship
+	fits_on_slot = mid
+
+	should_draw_components = yes
+	entity = "battleship_mid_L3_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+    component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	large_utility_slots = 4
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 100 }
+	}
+	prerequisites = { tech_battleship_hull_1 }
+}
+
+# Advanced Artillery Core
+ship_section_template = { key = "tss_advanced_artillery_core"
+	ship_size = battleship
+	fits_on_slot = mid
+
+	should_draw_components = yes
+	entity = "battleship_mid_L3_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	large_utility_slots = 5
+
+	# Costs and Prerequisites
+	resources = {
+		category = ship_sections
+		cost = { alloys = 120 }
+	}
+	prerequisites = { tech_battleship_hull_2 }
+
+	# AI role preference
+}

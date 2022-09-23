@@ -1,0 +1,420 @@
+# Cruisers
+# - Improved Boardside Stern
+# - Advanced Boardside Stern
+
+# Improved Boardside Stern
+ship_section_template = {key = "tss_improved_boardside_stern"
+	ship_size = cruiser
+	fits_on_slot = stern
+	
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "medium_gun_01"
+	}
+
+
+	aux_utility_slots = 3
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_1 }
+}
+
+# Advanced Boardside Stern
+ship_section_template = { key = "tss_advanced_boardside_stern"
+	ship_size = cruiser
+	fits_on_slot = stern
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 4
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+	
+	prerequisites = { tech_cruiser_hull_2 }
+}
+
+# Improved Boardside Core
+ship_section_template = {key = "tss_improved_boardside_core"
+	ship_size = cruiser
+	fits_on_slot = mid
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_mid_M3_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "medium_gun_02"
+	}
+
+    medium_utility_slots = 5
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_1 }
+}
+
+# Advanced Boardside Core
+ship_section_template = { key = "tss_advanced_boardside_core"
+	ship_size = cruiser
+	fits_on_slot = mid
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_mid_M3_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_03"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_06"
+		template = "medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	medium_utility_slots = 6
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_2 }
+}
+
+# Improved Boardside Bow
+ship_section_template = {key = "tss_improved_boardside_bow"
+	ship_size = cruiser
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_bow_M2_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 5
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_1 }
+}
+
+# Advanced Boardside Bow
+ship_section_template = { key = "tss_advanced_boardside_bow"
+	ship_size = cruiser
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_bow_M2_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+    # Component
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	medium_utility_slots = 6
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_2 }
+}
+
+# Artillery
+
+# Improved Artillery Bow
+ship_section_template = {key = "tss_improved_artillery_bow"
+	ship_size = cruiser
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_bow_L1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+    component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	medium_utility_slots = 5
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_1 }
+}
+
+# Advanced Artillery Bow
+ship_section_template = { key = "tss_advanced_artillery_bow"
+	ship_size = cruiser
+	fits_on_slot = bow
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_bow_L1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+    # Component
+    component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	medium_utility_slots = 6
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_2 }
+}
+
+
+# Improved Artillery Core
+ship_section_template = { key = "tss_improved_artillery_core"
+	ship_size = cruiser
+	fits_on_slot = mid
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_mid_L1M1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+    medium_utility_slots = 5
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 50
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_1 }
+}
+
+# Advanced Artillery Core
+ship_section_template = { key = "tss_advanced_artillery_core"
+	ship_size = cruiser
+	fits_on_slot = mid
+
+	# Graphic
+	should_draw_components = yes
+	entity = "cruiser_mid_L1M1_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# Component
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+    component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	medium_utility_slots = 6
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 60
+		}
+	}
+
+	prerequisites = { tech_cruiser_hull_2 }
+}

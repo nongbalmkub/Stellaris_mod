@@ -1,0 +1,2 @@
+1 Spinal = 2 Large = 4 Medium = 8 Small = 16 Point Defense
+Large = Hangar

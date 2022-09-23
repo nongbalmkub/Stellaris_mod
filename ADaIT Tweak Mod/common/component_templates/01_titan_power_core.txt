@@ -1,0 +1,111 @@
+#	Icons set here are the ones show in the actual slot. 
+
+	### Titan Power Core ###
+### 1
+utility_component_template = {
+	key = "TITAN_POWER_CORE"
+	size = small
+	icon = "GFX_titan_power_core_1"
+	icon_frame = 1
+	power = 4000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 800
+			rare_crystals = 16
+		}
+	}
+	
+	modifier = {
+		ship_weapon_damage = 0.5
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.5
+		ship_armor_regen_add_static = 2
+	}
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { titan }
+	prerequisites = { "tech_dreadnought_a" "tech_titans" "tech_zero_point_power" }
+	component_set = "power_core"
+	upgrades_to = "TITAN_POWER_CORE_IMPROVED"
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+### 2
+utility_component_template = {
+	key = "TITAN_POWER_CORE_IMPROVED"
+	size = small
+	icon = "GFX_titan_power_core_2"
+	icon_frame = 1
+	power = 5200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			rare_crystals = 16
+			exotic_gases = 16
+			volatile_motes = 16
+		}
+	}
+	
+	modifier = {
+		ship_weapon_damage = 0.75
+		ship_armor_add = 1000
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.75
+		ship_armor_regen_add_static = 4
+	}
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { titan }
+	prerequisites = { "tech_improved_titan_tech" "tech_zero_point_power" }
+	component_set = "power_core"
+	upgrades_to = "TITAN_POWER_CORE_ADVANCED"
+	
+	show_in_tech = "tech_improved_titan_tech"
+	
+	ai_weight = {
+		weight = 7
+	}
+}
+
+### 3
+utility_component_template = {
+	key = "TITAN_POWER_CORE_ADVANCED"
+	size = small
+	icon = "GFX_titan_power_core_3"
+	icon_frame = 1
+	power = 6400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1600
+			sr_dark_matter = 24
+		}
+	}
+	
+	modifier = {
+		ship_weapon_damage = 1
+		ship_armor_add = 2000
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 1
+		ship_armor_regen_add_static = 8
+	}
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { titan }
+	prerequisites = { "tech_advanced_titan_tech" "tech_zero_point_power" }
+	component_set = "power_core"
+	
+	show_in_tech = "tech_advanced_titan_tech"
+	
+	ai_weight = {
+		weight = 10
+	}
+}

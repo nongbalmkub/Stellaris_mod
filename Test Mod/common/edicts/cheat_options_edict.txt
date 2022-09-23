@@ -1,0 +1,307 @@
+#############################
+###     Options Edict     ###
+#############################
+
+cheat_options_1 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_produces_produces_mult = 0.75
+		country_alloys_produces_mult = 0.75
+		country_consumer_goods_produces_mult = 0.75
+		country_energy_produces_mult = 0.75
+		country_minerals_produces_mult = 0.75
+		country_unity_produces_mult = 1.00
+		country_physics_research_produces_mult = 0.75
+		country_society_research_produces_mult = 0.75
+		country_engineering_research_produces_mult = 0.75
+		country_exotic_gases_produces_mult = 2.00
+		country_rare_crystals_produces_mult = 2.00
+		country_volatile_motes_produces_mult = 2.00
+		country_sr_zro_produces_mult = 2.00
+		country_sr_dark_matter_produces_mult = 2.00
+		country_sr_living_metal_produces_mult = 2.00
+		country_influence_produces_mult = 2.00
+
+		pop_growth_speed = 2.00
+		planet_pop_assembly_mult = 2.00
+		pop_happiness = 0.5
+		planet_stability_add = 5.00
+		country_naval_cap_mult = 1.00
+		ships_upkeep_mult = -0.40
+		starbases_upkeep_mult = -0.40
+		country_resettlement_cost_mult = -1.00
+
+		megastructure_build_speed_mult = 1.00
+		planet_building_build_speed_mult = 2.00
+		planet_clear_blocker_time_mult = -1000.00
+
+		# terraform_speed_mult = 2.00
+		# starbse_upgrade_speed_mult = 1.00
+		# starbase_module_build_speed_mult = 1.00
+		# starbase_building_build_speed_mult = 1.00
+		# shipclass_military_station_build_speed_mult = 1.00
+		# shipclass_ion_cannon_build_speed_mult = 1.00
+
+		leader_skill_levels = 100
+		species_leader_exp_gain = 100.00
+
+		country_government_civic_points_add = 8
+
+		country_leader_pool_size = 4
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+	}	
+}
+
+cheat_options_2 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_alloys_produces_mult = 2.00
+		country_consumer_goods_produces_mult = 2.00
+		country_energy_produces_mult = 2.00
+		country_minerals_produces_mult = 2.00
+		country_unity_produces_mult = 2.00
+		country_physics_research_produces_mult = 2.00
+		country_society_research_produces_mult = 2.00
+		country_engineering_research_produces_mult = 2.00
+		country_exotic_gases_produces_mult = 3.00
+		country_rare_crystals_produces_mult = 3.00
+		country_volatile_motes_produces_mult = 3.00
+		country_sr_zro_produces_mult = 3.00
+		country_sr_dark_matter_produces_mult = 3.00
+		country_sr_living_metal_produces_mult = 3.00
+		country_influence_produces_mult = 2.00
+		
+		pop_growth_speed = 4.00
+		planet_pop_assembly_mult = 3.00
+		pop_happiness = 1.00
+		planet_stability_add = 15.00
+		ships_upkeep_mult = -0.30
+		starbases_upkeep_mult = -0.30
+		country_resettlement_cost_mult = -0.75
+		starbase_shipyard_build_speed_mult = 2.00
+
+		planet_building_build_speed_mult = 20.00
+		planet_clear_blocker_time_mult = -1000.00
+		terraform_speed_mult = 5.00
+		megastructure_build_speed_mult = 5.00
+		country_megastructure_build_cap_add = 1.00
+		starbse_upgrade_speed_mult = 5.00
+		starbase_module_build_speed_mult = 5.00
+		starbase_building_build_speed_mult = 5.00
+		shipclass_military_station_build_speed_mult = 5.00
+		shipclass_ion_cannon_build_speed_mult = 5.00
+		leader_skill_levels = 100
+		species_leader_exp_gain = 100.00
+
+		country_government_civic_points_add = 8
+
+		country_leader_pool_size = 4
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+	}	
+}
+cheat_options_3 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_produces_produces_mult = 0.75
+		country_alloys_produces_mult = 0.75
+		country_consumer_goods_produces_mult = 0.75
+		country_energy_produces_mult = 0.75
+		country_minerals_produces_mult = 0.75
+		country_unity_produces_mult = 1.00
+		country_physics_research_produces_mult = 0.75
+		country_society_research_produces_mult = 0.75
+		country_engineering_research_produces_mult = 0.75
+        	country_exotic_gases_produces_mult = 2.00
+		country_rare_crystals_produces_mult = 2.00
+		country_volatile_motes_produces_mult = 2.00
+		country_sr_zro_produces_mult = 2.00
+		country_sr_dark_matter_produces_mult = 2.00
+		country_sr_living_metal_produces_mult = 2.00
+		country_influence_produces_mult = 2.00
+
+		pop_growth_speed = 2.00
+		planet_pop_assembly_mult = 2.00
+		pop_happiness = 0.5
+		planet_stability_add = 5.00
+		country_naval_cap_mult = 1.00
+		ships_upkeep_mult = -0.40
+		starbases_upkeep_mult = -0.40
+		country_resettlement_cost_mult = -1.00
+
+		megastructure_build_speed_mult = 1.00
+		planet_building_build_speed_mult = 2.00
+		planet_clear_blocker_time_mult = -1000.00
+
+		leader_skill_levels = 100
+		species_leader_exp_gain = 100.00
+	}
+	ai_weight = {
+		weight = 50
+	}	
+}
+cheat_options_4 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		starbase_shipyard_build_speed_mult = 20.00
+		
+		megastructure_build_speed_mult = 500.00
+		country_resource_max_energy_add = 800000.00
+		shipclass_military_station_build_speed_mult = 200.00
+		shipclass_ion_cannon_build_speed_mult = 200.00
+		country_physics_research_produces_mult = 10.00
+		country_society_research_produces_mult = 10.00
+		country_engineering_research_produces_mult = 10.00
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+	}	
+}
+cheat_options_5 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_alloys_produces_mult = 0.25
+		country_consumer_goods_produces_mult = 0.25
+		country_energy_produces_mult = 0.25
+		country_minerals_produces_mult = 0.25
+		country_unity_produces_mult = 0.25
+		country_physics_research_produces_mult = 0.50
+		country_society_research_produces_mult = 0.50
+		country_engineering_research_produces_mult = 0.50
+	}
+	ai_weight = {
+		weight = 10000
+	}
+	allow = {
+		has_valid_civic = civic_lv_nymphic_hosts
+	}
+}
+
+cheat_options_6 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		pop_growth_speed = 2.00
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+	}	
+}
+
+cheat_options_8 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		starbase_shipyard_build_speed_mult = 10000.00
+		planet_building_build_speed_mult = 10000.00
+		planet_clear_blocker_time_mult = -10000.00
+		terraform_speed_mult = 10000.00
+		megastructure_build_speed_mult = 10000.00
+		starbse_upgrade_speed_mult = 10000.00
+		starbase_module_build_speed_mult = 10000.00
+		starbase_building_build_speed_mult = 10000.00
+		shipclass_military_station_build_speed_mult = 10000.00
+		shipclass_ion_cannon_build_speed_mult = 10000.00
+		leader_skill_levels = 100
+		species_leader_exp_gain = 100.00
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+	}	
+}
+
+tcs_cheat_options_7 = {
+	length = -1
+    	edict_cap_usage = 0
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	modifier = {
+		country_produces_produces_mult = 0.50
+		country_alloys_produces_mult = 0.50
+		country_consumer_goods_produces_mult = 0.50
+		country_energy_produces_mult = 0.50
+		country_minerals_produces_mult = 0.50
+		country_unity_produces_mult = 0.50
+		country_physics_research_produces_mult = 0.50
+		country_society_research_produces_mult = 0.50
+		country_engineering_research_produces_mult = 0.50
+
+        	starbase_shipyard_build_speed_mult = 2.00
+	}
+	ai_weight = {
+		weight = 0
+	}
+	allow = {
+		is_ai = no
+		any_war = true
+	}	
+}

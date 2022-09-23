@@ -1,0 +1,3 @@
+﻿#NGameplay = { a = b }
+NGameplay = { STARBASE_CAPACITY_SYSTEM_MULT = 0.01 }
+NGameplay = { STARBASE_CAPACITY_POP_MULT = 0.01 }

@@ -1,0 +1,781 @@
+	### Dreadnought A technologies
+
+	### TECH COST ###
+#@tier1cost1 = 2000s from "D:\Games\Steam\steamapps\common\Stellaris\common\scripted_variables\00_scripted_variables.txt"
+
+	### TECH WEIGHT ###
+#@tier1weight1 = 100
+# it will read @ values from "D:\Games\Steam\steamapps\common\Stellaris\common\scripted_variables\00_scripted_variables.txt"
+
+	### TECH WEIGHTS ###
+#@tier1weight1 = 100
+# it will read @ values from "D:\Games\Steam\steamapps\common\Stellaris\common\scripted_variables\00_scripted_variables.txt"
+
+	### TECH ###
+# Dreadnought AX tech (parts and cores)
+tech_dreadnought_a = {
+	icon = "GFX_tech_dreadnought_a"
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }	
+	prerequisites = { "tech_battleships" }
+	weight = 10
+	ai_update_type = military
+	
+	modifier = {
+		country_command_limit_add = 10
+	}
+	
+	potential = {
+		host_has_dlc = "Leviathans Story Pack"			# It is fair
+	}
+	
+	## unlock Dreadnought A
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		ship = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			add = -2
+			is_ai = yes
+		}
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 75 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { any_owned_ship = { is_ship_size = npc_warship_01 } }
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.5
+			years_passed > 90
+		}
+		modifier = {
+			factor = 2.0
+			years_passed > 105
+		}
+		modifier = {
+			factor = 2.5
+			years_passed > 125
+		}
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				has_technology = tech_dreadnought_a
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100			### 100 - important, 0 - useless ###
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_improved_dreadnought_tech = {
+	icon = "GFX_tech_improved_dreadnought_tech"
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" }
+	weight = @tier5weight3
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_CORE_IMPROVED_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_CORE_IMPROVED_DESC"
+		}
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_SECTION_1_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_SECTION_1_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_advanced_dreadnought_tech = {
+	icon = "GFX_tech_advanced_dreadnought_tech"
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" "tech_improved_dreadnought_tech" }
+	weight = @tier5weight3
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_CORE_ADVANCED_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_CORE_ADVANCED_DESC"
+		}
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_SECTION_2_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_SECTION_2_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_relic_dreadnought = {
+	icon = "GFX_tech_relic_dreadnought"
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" "tech_advanced_dreadnought_tech" }
+	weight = 4
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_DREADNOUGHT_A_CORE_RELIC_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_A_CORE_RELIC_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			add = -1
+			is_ai = yes
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# Dreadnought AX computers/roles
+#tech_dreadnought_a_computers = {					# Overpowered too much
+#	icon = "GFX_tech_dreadnought_a_computers"
+#	cost = @tier5cost2
+#	area = physics
+#	tier = 5
+#	is_rare = yes
+#	category = { computing }
+#	prerequisites = { "tech_improved_dreadnought_tech" "tech_combat_computers_2" }
+#	weight = @tier5weight2
+#	
+#	prereqfor_desc = {
+#		component = {
+#			title = "TECH_UNLOCK_DREADNOUGHT_A_COMPUTERS_TITLE"
+#			desc = "TECH_UNLOCK_DREADNOUGHT_A_COMPUTERS_DESC"
+#		}
+#	}
+#	
+#	weight_modifier = {
+#		modifier = {
+#			add = -1
+#			is_ai = yes
+#		}
+#		modifier = {
+#			factor = 0.25
+#			NOR = {
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_curator"
+#				}
+#				research_leader = {
+#					area = engineering 
+#					has_trait = "leader_trait_maniacal"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_spark_of_genius"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_expertise_computing"
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_computing"
+#			}
+#		}
+#		modifier = {
+#			factor = 1.5
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_maniacal"
+#			}
+#		}
+#		modifier = {
+#			factor = @ap_technological_ascendancy_rare_tech
+#			has_ascension_perk = ap_technological_ascendancy
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 100
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_computing"
+#			}
+#		}
+#	}
+#}
+
+# Dreadnought AX improvements: hull, armor(?), construction speed;
+# Dreadnought AX Hull
+tech_dreadnought_a_improved_hull = {
+	icon = "GFX_tech_dreadnought_a_improved_hull"
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	is_rare = no
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" "tech_improved_dreadnought_tech" }
+	weight = @tier5weight1
+	
+	modifier = {
+		shipsize_dreadnought_a_hull_add = 2000
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_dreadnought_a_advanced_hull = {
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" "tech_dreadnought_a_improved_hull" }
+	weight = @tier5weight3
+	
+	modifier = {
+		shipsize_dreadnought_a_hull_add = 2000
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering 
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# Dreadnought AX Armor			# Didnt work, cant work with limit, PDX sucks;
+#tech_dreadnought_a_improved_armor = {
+#	cost = @tier5cost1
+#	area = engineering
+#	tier = 5
+#	is_rare = no
+#	category = { voidcraft }
+#	prerequisites = { "tech_improved_dreadnought_tech" }
+#	weight = @tier5weight1
+#	
+#	modifier = {
+#		shipsize_dreadnought_a_armor_add = 1000
+#	}
+#	
+#	weight_modifier = {
+#		modifier = {
+#			factor = 0.5
+#			NOR = {
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_curator"
+#				}
+#				research_leader = {
+#					area = engineering 
+#					has_trait = "leader_trait_maniacal"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_spark_of_genius"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_expertise_voidcraft"
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 1.25
+#			has_tradition = tr_supremacy_adopt
+#		}
+#		modifier = {
+#			factor = 1.5
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#		modifier = {
+#			factor = @ap_technological_ascendancy_rare_tech
+#			has_ascension_perk = ap_technological_ascendancy
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 5
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#	}
+#}
+
+#tech_dreadnought_a_advanced_armor = {
+#	cost = @tier5cost2
+#	area = engineering
+#	tier = 5
+#	is_rare = yes
+#	category = { voidcraft }
+#	prerequisites = { "tech_dreadnought_a_improved_armor" }
+#	weight = @tier5weight2
+#	
+#	modifier = {
+#		shipsize_dreadnought_a_armor_add = 1000
+#	}
+#	
+#	weight_modifier = {
+#		modifier = {
+#			factor = 0.25
+#			NOR = {
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_curator"
+#				}
+#				research_leader = {
+#					area = engineering 
+#					has_trait = "leader_trait_maniacal"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_spark_of_genius"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_expertise_voidcraft"
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 1.25
+#			has_tradition = tr_supremacy_adopt
+#		}
+#		modifier = {
+#			factor = 1.5
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#		modifier = {
+#			factor = @ap_technological_ascendancy_rare_tech
+#			has_ascension_perk = ap_technological_ascendancy
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 5
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#	}
+#}
+
+#tech_dreadnought_a_integrated_armor = {
+#	cost = @tier5cost3
+#	area = engineering
+#	tier = 5
+#	is_rare = yes
+#	category = { voidcraft }
+#	prerequisites = { "tech_dreadnought_a_advanced_armor" }
+#	weight = @tier5weight3
+#	
+#	modifier = {
+#		shipsize_dreadnought_a_armor_add = 2000
+#	}
+#	
+#	weight_modifier = {
+#		modifier = {
+#			factor = 0.25
+#			NOR = {
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_curator"
+#				}
+#				research_leader = {
+#					area = engineering 
+#					has_trait = "leader_trait_maniacal"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_spark_of_genius"
+#				}
+#				research_leader = {
+#					area = engineering
+#					has_trait = "leader_trait_expertise_voidcraft"
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 1.25
+#			has_tradition = tr_supremacy_adopt
+#		}
+#		modifier = {
+#			factor = 1.5
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#		modifier = {
+#			factor = @ap_technological_ascendancy_rare_tech
+#			has_ascension_perk = ap_technological_ascendancy
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 5
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_voidcraft"
+#			}
+#		}
+#	}
+#}
+
+# Dreadnought AX Build speed and #Build cost#
+tech_dreadnought_a_build_speed = {
+	icon = "GFX_tech_dreadnought_a_build_speed"
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_dreadnought_a" "tech_improved_dreadnought_tech" }
+	weight = @tier5weight2
+	
+	modifier = {
+		shipsize_dreadnought_a_build_speed_mult = 0.25
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

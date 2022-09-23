@@ -1,0 +1,303 @@
+# Destroyer sections
+
+# Base hull alloy cost 30
+
+# Improved Interceptor Stern (Done)
+ship_section_template = { key = "tss_improved_interceptor_stern"
+	ship_size = destroyer
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity" # Two small gun graphics supported
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name 		= "SMALL_GUN_01"
+		template 	= "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_02"
+		template 	= "small_turret"
+		locatorname = "small_gun_02"
+	}
+    component_slot = {
+		name 		= "SMALL_GUN_03"
+		template 	= "small_turret"
+		locatorname = "small_gun_01"
+	}
+	aux_utility_slots = 2
+
+	# Cost 10 alloys/slot
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+	# Requires Improved Destroyer hull tech
+	prerequisites = { tech_destroyer_hull_1	}
+}
+
+# Improved Gunship Stern (Done)
+ship_section_template = { key = "tss_improved_gunship_stern"
+	ship_size = destroyer
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity" # Supports 1 medium gun graphic
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name 		= "MEDIUM_GUN_01"
+		template 	= "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name 		= "SMALL_GUN_01"
+		template 	= "small_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	# Cost 10 alloys/slot
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	prerequisites = { tech_destroyer_hull_1	}
+}
+
+# Advanced Interceptor (Done)
+ship_section_template = { key = "tss_advanced_interceptor_stern"
+	ship_size = destroyer
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity" # Supports two small gun graphics
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name 		= "SMALL_GUN_01"
+		template 	= "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_02"
+		template 	= "small_turret"
+		locatorname = "small_gun_02"
+	}
+    component_slot = {
+		name 		= "SMALL_GUN_03"
+		template 	= "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name 		= "SMALL_GUN_04"
+		template 	= "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots   = 3
+
+	# Cost 10 alloys/slot
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+	# Requires Advanced Destroyer hull tech
+	prerequisites = { tech_destroyer_hull_2	}
+}
+
+# Advanced Gunship Stern (Done)
+ship_section_template = { key = "tss_advanced_gunship_stern"
+	ship_size = destroyer
+	fits_on_slot = stern
+
+	# Graphics
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity" # Supports one medium gun graphic
+	# icon   = "GFX_ship_part_core_stern"
+
+	# Section slots
+	component_slot = {
+		name 		= "MEDIUM_GUN_01"
+		template 	= "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name 		= "MEDIUM_GUN_02"
+		template 	= "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots   = 3
+
+	# Cost 10 alloys/slot
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+	# Requires Advanced Destroyer hull tech
+	prerequisites = { tech_destroyer_hull_2	}
+}
+
+# Improved Artillery Bow (Done)
+ship_section_template = { key = "tss_improved_artillery_bow"
+	ship_size = destroyer
+	fits_on_slot = bow
+
+    # Graphic
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+
+    # Section Slot
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 7
+    # Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	prerequisites = { tech_destroyer_hull_1	}
+}
+
+# Advanced Artillery Bow (Done)
+ship_section_template = { key = "tss_advanced_artillery_bow"
+	ship_size = destroyer
+	fits_on_slot = bow
+
+    # Graphic
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	#icon = "GFX_ship_part_core_bow"
+
+    # Section Slot
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+    component_slot = {
+		name = "Large_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 9
+
+    # Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+
+	prerequisites = { tech_destroyer_hull_2	}
+}
+
+# Improved Gunship Bow (Done)
+ship_section_template = { key = "tss_improved_gunship_bow"
+	ship_size = destroyer
+	fits_on_slot = bow
+
+    # Graphic
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	#icon = "GFX_ship_part_core_bow"
+
+    # Section Slot
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 7
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	prerequisites = { tech_destroyer_hull_1	}
+}
+
+# Advanced Gunship Bow (Done)
+ship_section_template = { key = "tss_advanced_gunship_bow"
+	ship_size = destroyer
+	fits_on_slot = bow
+
+    # Graphic
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	#icon = "GFX_ship_part_core_bow"
+
+    # Section Slot
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 9
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+
+	    prerequisites = { tech_destroyer_hull_2	}
+}

@@ -1,0 +1,308 @@
+# Corvettes
+# - Improved Picket ship (Done)
+# - Advanced Picket ship (Done)
+# - Improved Missile (Done)
+# - Advanced Missile (Done)
+# - Improved Interceptor (Done)
+# - Advanced Interceptor (Done)
+
+# Improved Interceptor
+# 2 Small, 1 Medium weapon slots for Combat
+ship_section_template = { key = "tss_improved_interceptor"
+	ship_size = corvette
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Slots in section
+	component_slot = {
+		name        = "MEDIUM_GUN_01"
+		template    = "medium_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_02"
+		template    = "small_turret"
+		locatorname = "small_gun_02"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_03"
+		template    = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots   = 1
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_1"
+	}
+
+	# Ai weight
+}
+# Advanced Interceptor
+# 2 Small, 2 Medium Small weapon slots for Combat
+ship_section_template = { key = "tss_advanced_interceptor"
+	ship_size = corvette
+	fits_on_slot = mid
+	
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	# icon   = "GFX_ship_part_core_mid"
+	
+	# Slots in section
+	component_slot = {
+		name        = "MEDIUM_GUN_01"
+		template    = "medium_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "MEDIUM_GUN_02"
+		template    = "medium_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_03"
+		template    = "small_turret"
+		locatorname = "small_gun_02"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_04"
+		template    = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots   = 2
+	
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+	
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_2"
+	}
+
+	# Ai weight
+}
+
+# Improved Picket ship
+# 2 Picket, 2 Small
+ship_section_template = { key = "tss_improved_picket"
+	ship_size = corvette
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Slots in section
+	component_slot = {
+		name        = "SMALL_GUN_01"
+		template    = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_02"
+		template    = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_03"
+		template    = "small_turret"
+		locatorname = "small_gun_02"
+	}
+    component_slot = {
+		name        = "SMALL_GUN_04"
+		template    = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots   = 1
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_1"
+	}
+
+	# Ai weight
+}
+
+# Advanced Picket ship
+# 3 Picket , 3 Small
+ship_section_template = { key = "tss_advanced_picket"
+	ship_size = corvette
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_S3_entity"
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Slots in section
+	component_slot = {
+		name        = "SMALL_GUN_01"
+		template    = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_02"
+		template    = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+    component_slot = {
+		name        = "SMALL_GUN_03"
+		template    = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_04"
+		template    = "small_turret"
+		locatorname = "small_gun_02"
+	}
+    component_slot = {
+		name        = "SMALL_GUN_05"
+		template    = "small_turret"
+		locatorname = "small_gun_03"
+	}
+    component_slot = {
+		name        = "SMALL_GUN_06"
+		template    = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+
+	small_utility_slots = 4
+	aux_utility_slots   = 2
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_2"
+	}
+
+	# Ai weight
+}
+
+# Improved Missile Boat
+# 2 Small, 1 Missile
+ship_section_template = { key = "tss_improved_missile"
+	ship_size = corvette
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Slots in section
+	component_slot = {
+		name        = "TORPEDO_01"
+		template    = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_01"
+		template    = "small_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_02"
+		template    = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots   = 1
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 35 }
+	}
+
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_1"
+	}
+
+	# Ai weight
+}
+
+# Advanced Missile Boat
+# 2 Small, 2 Missile
+ship_section_template = { key = "tss_advanced_missile"
+	ship_size = corvette
+	fits_on_slot = mid
+
+	# Graphics
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	# icon   = "GFX_ship_part_core_mid"
+
+	# Slots in section
+	component_slot = {
+		name        = "TORPEDO_01"
+		template    = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+    component_slot = {
+		name        = "TORPEDO_02"
+		template    = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_01"
+		template    = "small_turret"
+		locatorname = "small_gun_01"
+	}
+  	component_slot = {
+		name        = "SMALL_GUN_02"
+		template    = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+
+	small_utility_slots = 4
+	aux_utility_slots   = 2
+
+	# Cost
+	resources = {
+		category = ship_sections
+		cost = { alloys = 40 }
+	}
+
+	# Requirement
+	prerequisites = {
+		"tech_corvette_hull_2"
+	}
+
+	# Ai weight
+}
